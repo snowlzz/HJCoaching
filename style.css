@@ -27,7 +27,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-    opacity: 50%;
 }
 
 .show-menu .hamburguer{
