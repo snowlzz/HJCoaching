@@ -6,9 +6,12 @@ As tarefas serão feitas pela aba projects do GitHub.
 
 ## UPDATE
 
-nova funcionalidade;
-começo de functions JS;
-Animação
+nova funcionalidade;:checkered_flag:
+começo de functions JS;:checkered_flag:
+Animação:checkered_flag:
+Sub menus da sessão 'coaching' adicionados. :checkered_flag:
+Fechamento automático do menu quando se clica em qualquer lugar da pagina. :checkered_flag:
+
 
 ## Ícones
 :package:NOva funcionalidade    
