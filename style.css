@@ -106,7 +106,41 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: lowercase;
+    justify-content: center;
+}
+
+
+.sub-menu{
+    position: relative;
+    top: 50%;
+    left: 25%;
+    font-family: var(--font-action);
+    font-size: 19px;
+    transition: all 1s;
+}
+
+.sub-menu-link{
+    color: #555;
+    transition: all 1s;
+}
+
+.sub-menu-link:hover{
+    color: #a044ff;
+    transition: 1s;
+}
+
+.sub-menu{
+    display: none;
+    transition: all 1s;
+}
+
+.sub-menu.show{
+    display: block;
+    transition: all 1s;
+}
+
+.material-icons{
+    font-size: 20px;line-height: 0.1;letter-spacing: -0.275rem;font-weight: 700;
 }
 
 .menu-item{
