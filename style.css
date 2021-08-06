@@ -27,74 +27,86 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: all 1.2s;
 }
 
 .show-menu .hamburguer{
-    right: 16rem;
+    right: 15rem;
 }
 
 .line{
     width: 100%;
     height: 0.1rem;
     background-color: #ffffff;
-    box-shadow: 0.1rem 0.1rem 0.5px #000;
+    box-shadow: 0rem 0.1rem 0.1rem #000;
     transition: transform 1s;
 }
 
 .show-menu #line1{
-    transform: rotate(45deg) translate(0.3rem, 0.45rem);
+    transform: rotate(40deg) translate(0.4rem, 0.45rem);
 }
 
 .show-menu #line2{
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
 }
 
 .show-menu #line3{
-    transform: rotate(-45deg) translate(0.3rem, -0.45rem);
+    transform: rotate(-40deg) translate(0.2rem, -0.45rem);
 }
 
-
-.hamburguer span {
+.hamburguer span{
     position: absolute;
     left: 3rem;
+    background-color: #7a02f1;
     height: 2rem;
     width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a044ff;
-    color:#ffffff;
-    font-family: "Josefin Slab";
+    font-family: var(--font-action);
+    color: #fff;
+    font-size: 20px;
     opacity: 0;
+    transition: all 1s;
 }
 
-.hamburguer span::before {
+.hamburguer span::before{
     content: "";
     position: absolute;
-    border-right: 0.5rem solid #a044ff;
-    border-top: 0.5rem solid transparent;
-    border-left: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid transparent;
+    border-right: .5rem solid #7a02f1;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
     left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 0.5;
 }
 
 .sidebar{
     width: 20rem;
     height: 100vh;
     background-color: #ffffff;
-    position:fixed;
+    position: fixed;
     top: 0;
-    right: 0;
-    opacity: 50%;
+    right: -20rem;
+    opacity: 0.7;
     border-radius: 1.90%;
+    transition: all 1.4s;
 }
+.show-menu .sidebar{
+     right: 0;
+     transition: 1s;
+ }
 
 .menu{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-transform: lowercase;
 }
 
 .menu-item{
@@ -123,7 +135,7 @@
 }
 
 .social-media i{
-    background-color: #a044ff;
+    background-color: #7a02f1;
     color: rgba(255, 255, 255, 1);
     height: 2.5rem;
     width: 2.5rem;
@@ -132,11 +144,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: 1s;
+    transition: background-color 1s;
 }
 
 .social-media i:hover{
-    background-color: rgb(191, 81, 255);
+    background-color: rgb(129, 41, 243);
 }
             /*------Banner e Header------*/
 

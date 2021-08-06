@@ -9,3 +9,9 @@ As tarefas serão feitas pela aba projects do GitHub.
 nova funcionalidade;
 começo de functions JS;
 Animação
+
+## Ícones
+:package:NOva funcionalidade    
+:up:atualização
+:beetle:correção de bugs    
+:checkered_flag:release
