@@ -11,6 +11,8 @@ começo de functions JS;:checkered_flag:
 Animação:checkered_flag:
 Sub menus da sessão 'coaching' adicionados. :checkered_flag:
 Fechamento automático do menu quando se clica em qualquer lugar da pagina. :checkered_flag:
+Conclusão da aba contatos
+inicialização da aba coaching
 
 
 ## Ícones
