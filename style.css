@@ -174,7 +174,7 @@ html{
     left: 25%;
     font-family: var(--font-action);
     font-size: 19px;
-    transition: 1s;
+    transition: all 1s;
 }
 
 .sub-menu-link{
@@ -192,13 +192,14 @@ html{
     transition: all 2s;
 }
 
-.sub-menu.show{
+.sub-menu.show2{
     display: block;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .sub-menu.hide{
     display: none;
+    transition: all 2s;
 }
 
 .material-icons{
@@ -206,12 +207,18 @@ html{
     position: absolute;
     right: -3px;
     top: 55px;
+    transition: all 1s;
 }
 
 .material-icons.gira{
     transform: rotate(90deg);
-    transition: all 0.5s;
+    transition: all 1s;
 }
+
+.material-icons.ingira{
+    transform: rotate(90deg)
+}
+
 .social-media{
     /* background-color: rgba(255, 0, 0, .5);*/
     position: absolute;
@@ -235,7 +242,7 @@ html{
 }
 
 .social-media i:hover{
-    background-color: rgb(129, 41, 243);
+    background-color: rgb(61, 0, 141);
 }
             /*------Banner e Header------*/
 
@@ -439,25 +446,62 @@ header{
 .coaching{
     background:url(imgs/coaching.png);
     background-size: cover;
-}
-
-.coaching-text{
-    background-color:#eee;
-    width: 50%;
-    height: 60%;
     justify-content: center;
     align-items: center;
 }
 
+.imgwr{
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+    background-color: rgba(20, 20, 20, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.coaching-text{
+    font-family: var(--font-secundary);
+    font-size: 22px;
+    position: static;
+    text-align: center;
+}
+
+.coaching-text p{
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.rest{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cor{
+    font-family: var(--font-secundary);
+    font-size: 22px;
+    color: rgb(149, 10, 192);
+}
+
+header h1{
+    text-align: center;
+    font-family: var(--font-primary);
+    color: rgb(255, 255, 255);
+    text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, .4);
+    font-size: 62px;
+    font-weight: 700;
+}
+
 .glassb{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6.5px );
-    -webkit-backdrop-filter: blur( 6.5px );
+    background: rgba(54, 45, 54, 0.52);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 50%;
-    height: 70%;
+    border: 5px solid rgba(191, 185, 185, 0.89);
+    width: 80%;
+    height: 75%;
+    display: grid;
+    position: relative;
+    left: 8rem;
 }
 
 .coachings h1{
