@@ -17,13 +17,16 @@ document.querySelector(".menu-link1").addEventListener("click", () =>{
 
 document.querySelector(".menu-link").addEventListener("click", () =>{
     document.querySelector(".sub-menu").classList.remove("show2")
+    document.querySelector(".material-icons").classList.remove("gira")
 })
 
 document.querySelector(".menu-link1").addEventListener("click", () =>{
     document.querySelector('.material-icons').classList.toggle("gira")
 });
 
-document.querySelector(".menu-link").addEventListener("click", () => {
+/*document.querySelector(".menu-link").addEventListener("click", () => {
     document.querySelector(".material-icons").classList.toggle("gira")
-})
+});*/
+
+
 
