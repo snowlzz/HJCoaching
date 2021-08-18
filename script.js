@@ -15,18 +15,15 @@ document.querySelector(".menu-link1").addEventListener("click", () =>{
     document.querySelector('.sub-menu').classList.toggle("show2");
 });
 
-document.querySelector(".menu-item").addEventListener("click", () =>{
-  document.querySelector('.sub-menu').classList.toggle("hide");
-
+document.querySelector(".menu-link").addEventListener("click", () =>{
+    document.querySelector(".sub-menu").classList.remove("show2")
 })
 
-document.querySelector(".menu-link1").addEventListener("click", () =>
+document.querySelector(".menu-link1").addEventListener("click", () =>{
     document.querySelector('.material-icons').classList.toggle("gira")
-);
+});
 
-document.querySelector(".menu-link1").addEventListener("click", () =>
-    document.querySelector('.material-icons').classList.toggle("ingira")
-);
-
-
+document.querySelector(".menu-link").addEventListener("click", () => {
+    document.querySelector(".material-icons").classList.toggle("gira")
+})
 
