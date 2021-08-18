@@ -10,10 +10,22 @@
     margin: 0;
     padding:0;
 }
+
+html{
+    scroll-behavior: smooth;
+    transition: all 5s;
+}
 :root{
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif
+}
+
+.container{
+    position: absolute;
+    display: fixed;
+    width: 100%;
+
 }
                 /*------Menu de navegação------*/
 .hamburguer{
@@ -51,7 +63,7 @@
 .line{
     width: 100%;
     height: 0.1rem;
-    background-color: #ffffff;
+    background-color: #c3a0e4;
     box-shadow: 0rem 0.1rem 0.1rem #000;
     transition: transform 1s;
 }
@@ -104,9 +116,10 @@
     height: 100vh;
     background-color: #ffffff;
     position: fixed;
+    display: fixed;
     top: 0;
     right: -20rem;
-    opacity: 0.7;
+    opacity: 0.9;
     border-radius: 1.90%;
     transition: all 1.4s;
 }
@@ -117,6 +130,7 @@
 
 .menu{
     position: absolute;
+    display: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,13 +138,43 @@
 }
 
 
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .4rem;
+    transition: 1s;
+}
+
+.menu-link1{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
+.menu-link1:hover{
+    color: #a044ff;
+}
+
+.menu-link{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+    position: relative;
+}
+
+.menu-link:hover{
+    color: #a044ff;
+}
+
 .sub-menu{
     position: relative;
     top: 50%;
     left: 25%;
     font-family: var(--font-action);
     font-size: 19px;
-    transition: 1s;
+    transition: all 1s;
 }
 
 .sub-menu-link{
@@ -148,9 +192,14 @@
     transition: all 2s;
 }
 
-.sub-menu.show{
+.sub-menu.show2{
     display: block;
-    transition: all 1s;
+    transition: all 2s;
+}
+
+.sub-menu.hide{
+    display: none;
+    transition: all 2s;
 }
 
 .material-icons{
@@ -158,32 +207,20 @@
     position: absolute;
     right: -3px;
     top: 55px;
+    transition: all 1s;
 }
 
 .material-icons.gira{
     transform: rotate(90deg);
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
-.menu-item{
-    text-align: center;
-    margin-bottom: .4rem;
-    transition: 1s;
-}
-
-.menu-link{
-    font-family: var(--font-action);
-    font-size: 2rem;
-    color: #555;
-    transition: color 1s;
-}
-
-.menu-link:hover{
-    color: #a044ff;
+.material-icons.ingira{
+    transform: rotate(90deg)
 }
 
 .social-media{
-   /* background-color: rgba(255, 0, 0, .5);*/
+    /* background-color: rgba(255, 0, 0, .5);*/
     position: absolute;
     bottom: 2rem;
     width: 100%;
@@ -205,7 +242,7 @@
 }
 
 .social-media i:hover{
-    background-color: rgb(129, 41, 243);
+    background-color: rgb(61, 0, 141);
 }
             /*------Banner e Header------*/
 
@@ -292,6 +329,186 @@ header{
     color: #000;
 }
 
+
+
+                /*------Sessão Contato------*/
+
+.sessao-co{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contato-wrapper{
+    margin-top: 50px;
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left{
+    width:45%;
+    display: flex;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(imgs/contato.jpg);
+    background-size: cover;
+}
+
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 2rem 3rem 5rem;
+}
+
+.sessao-co h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-co form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    border-bottom: 2px dashed #272727;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+
+.input-group{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group textarea{
+    padding-top: 2rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+
+.field-label{
+    position:absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 0.7rem;
+}
+
+.submit{
+    font-size: 1.1rem;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    width: 80%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0 0.5);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+    background-color: #a929ba;
+    color: #fff;
+    border:none;
+    border-radius: 20px;  
+}
+
+.preenchido{
+    pointer-events: none;
+}
+/*------Section Coaching------*/
+.coaching{
+    background:url(imgs/coaching.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgwr{
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+    background-color: rgba(20, 20, 20, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.coaching-text{
+    font-family: var(--font-secundary);
+    font-size: 22px;
+    position: static;
+    text-align: center;
+}
+
+.coaching-text p{
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.rest{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cor{
+    font-family: var(--font-secundary);
+    font-size: 22px;
+    color: rgb(149, 10, 192);
+}
+
+header h1{
+    text-align: center;
+    font-family: var(--font-primary);
+    color: rgb(255, 255, 255);
+    text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, .4);
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.glassb{
+    background: rgba(54, 45, 54, 0.52);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 5px solid rgba(191, 185, 185, 0.89);
+    width: 80%;
+    height: 75%;
+    display: grid;
+    position: relative;
+    left: 8rem;
+}
+
+.coachings h1{
+    font-family: var(--font-action);
+    color: #fff;
+    text-align: center;
+}
                 /*------Move Banner------*/
 
 @keyframes moveBanner{

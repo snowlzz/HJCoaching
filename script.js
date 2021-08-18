@@ -11,20 +11,22 @@ document.querySelector('.fechaMenu').addEventListener('click', () => {
   });
 
 
-document.querySelector(".menu").addEventListener("click", () =>
-    document.querySelector('.sub-menu').classList.toggle("show")
-);
+document.querySelector(".menu-link1").addEventListener("click", () =>{
+    document.querySelector('.sub-menu').classList.toggle("show2");
+});
 
-document.querySelector(".menu").addEventListener("click", () =>
+document.querySelector(".menu-item").addEventListener("click", () =>{
+  document.querySelector('.sub-menu').classList.toggle("hide");
+
+})
+
+document.querySelector(".menu-link1").addEventListener("click", () =>
     document.querySelector('.material-icons').classList.toggle("gira")
 );
 
+document.querySelector(".menu-link1").addEventListener("click", () =>
+    document.querySelector('.material-icons').classList.toggle("ingira")
+);
 
-/*const $container = $('.menu');
-$(document).mouseup(e => {
-    if(!$container.is(e.target)
-        && $container.has(e.target).length === 0)
-    {
-        $container.removeClass('.show-menu');
-    }
-});*/
+
+
