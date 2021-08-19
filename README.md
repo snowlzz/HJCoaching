@@ -16,6 +16,7 @@ inicialização da aba coaching<br>
 Bug do menu lateral resolvido :checkered_flag:<br>
 
 
+
 ## Ícones
 :package:Nova funcionalidade<br>
 :up:Atualização<br>
