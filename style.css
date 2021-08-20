@@ -506,11 +506,42 @@ header h1{
     left: 8rem;
 }
 
-.coachings h1{
+.coachings .text{
     font-family: var(--font-action);
     color: #fff;
     text-align: center;
 }
+
+.coachingpes{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(74,9,121,1) 45%, rgba(156,46,236,1) 100%);
+    height: auto;
+}
+
+.coachpes header{
+    background-color: #fff;
+    width: 50%;
+    position: relative;
+    left: 21rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 1;
+    box-shadow: 0 16px 64px 0 rgba(0, 0, 0, 0.9);
+}
+
+.coachpes h1{
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 62px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, .6);
+}
+
+
+
+
                 /*------Move Banner------*/
 
 @keyframes moveBanner{

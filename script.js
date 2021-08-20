@@ -24,6 +24,7 @@ document.querySelector(".menu-link1").addEventListener("click", () =>{
     document.querySelector('.material-icons').classList.toggle("gira")
 });
 
+
 /*document.querySelector(".menu-link").addEventListener("click", () => {
     document.querySelector(".material-icons").classList.toggle("gira")
 });*/
