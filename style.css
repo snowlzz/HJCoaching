@@ -331,6 +331,7 @@ header{
     line-height: 2.5rem;
     opacity: 0;
     animation: moveBanner 2s 0.5s forwards;
+    text-align: left;
 }
 
 .banner p{
@@ -505,6 +506,7 @@ header{
 .coaching-text p{
     font-weight: 500;
     color: whitesmoke;
+    text-align: center;
 }
 
 .rest{
