@@ -16,9 +16,24 @@ document.querySelector(".menu-link1").addEventListener("click", () =>{
 });
 
 document.querySelector(".menu-link").addEventListener("click", () =>{
-    document.querySelector(".sub-menu").classList.remove("show2")
-    document.querySelector(".material-icons").classList.remove("gira")
-})
+    document.querySelector(".sub-menu").classList.remove("show2");
+    document.querySelector(".material-icons").classList.remove("gira");
+});
+
+document.querySelector(".menu-link2").addEventListener("click", () =>{
+    document.querySelector(".sub-menu").classList.remove("show2");
+    document.querySelector(".material-icons").classList.remove("gira");
+});
+
+document.querySelector(".menu-link3").addEventListener("click", () =>{
+    document.querySelector(".sub-menu").classList.remove("show2");
+    document.querySelector(".material-icons").classList.remove("gira");
+});
+
+document.querySelector(".menu-link4").addEventListener("click", () =>{
+    document.querySelector(".sub-menu").classList.remove("show2");
+    document.querySelector(".material-icons").classList.remove("gira");
+});
 
 document.querySelector(".menu-link1").addEventListener("click", () =>{
     document.querySelector('.material-icons').classList.toggle("gira")

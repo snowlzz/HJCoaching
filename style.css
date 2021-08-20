@@ -153,7 +153,40 @@ html{
     transition: color 1s;
 }
 
+.menu-link2{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
+.menu-link3{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
+.menu-link4{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
 .menu-link1:hover{
+    color: #a044ff;
+}
+
+.menu-link2:hover{
+    color: #a044ff;
+}
+
+.menu-link3:hover{
+    color: #a044ff;
+}
+
+.menu-link4:hover{
     color: #a044ff;
 }
 
@@ -516,10 +549,20 @@ header h1{
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(74,9,121,1) 45%, rgba(156,46,236,1) 100%);
     height: auto;
+    padding-bottom: 20px;
+}
+
+.coachingpes p{
+    font-family: var(--font-action);
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .coachpes header{
-    background-color: #fff;
+    background-color: rgba(44, 146, 73, 0.4);
     width: 50%;
     position: relative;
     left: 21rem;
@@ -528,6 +571,7 @@ header h1{
     border-radius: 10px;
     opacity: 1;
     box-shadow: 0 16px 64px 0 rgba(0, 0, 0, 0.9);
+    border: 5px solid rgba(82, 255, 180, 0.5);
 }
 
 .coachpes h1{
