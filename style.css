@@ -606,7 +606,21 @@ header h1{
     165px 50px white,
     235px 300px white,
     131px 55px white,
-    125px 44px white;
+    125px 44px white,
+    400px 320px white,
+    120px 200px white,
+    230px 594px white,
+    150px 50px white,
+    100px 100px white,
+    240px 360px white,
+    156px 260px white,
+    180px 120px white,
+    200px 22px white,
+    250px 330px white,
+    200px 150px white,
+    150px 148px white,
+    320px 235px white,
+    430px 320px white;
   /*  199px 25px white;*/
     animation: anim-stars 20s linear infinite;
 }
@@ -633,7 +647,17 @@ header h1{
       125px 200px white,
       142px 75px white,
       165px 50px white,
-      235px 300px white;
+      235px 300px white,
+      100px 100px white,
+      240px 360px white,
+      156px 260px white,
+      180px 120px white,
+      200px 22px white,
+      250px 330px white,
+      200px 150px white,
+      150px 148px white,
+      320px 235px white,
+      430px 320px white;
     animation: anim-stars 25s linear infinite;
 }
 
@@ -652,7 +676,7 @@ header h1{
       275px 90px white,
       230px 10px white,
       120px 130px white,
-      300px 130px white,
+      300px 150px white,
       220px 115px white,
       430px 100px white,
       170px 70px white,
@@ -685,7 +709,8 @@ header h1{
       125px 200px white,
       142px 75px white,
       165px 50px white,
-      235px 300px white;
+      235px 300px white,
+
   }
   
 
